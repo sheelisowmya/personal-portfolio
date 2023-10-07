@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f099772f64.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/slogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Web developer</p> -->
+                <h2>Hi,I'm <span>sowmya</span><br>I'm passionated in web development</h2>
+            </div>
+        </div>
+    </div>
+    <!----------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/reddy.png">
+                </div>
+                <div class="about-col-1">
+                    <h6 class="sub-title">About Me</h6><br>
+                    <p>Hello, I'm sowmya I'm an enthusiastic person and I am very fond of learning new things.I have a solid foundation in Html and css.I am pretty interested to become a web developer
+                    
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div> 
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML,CSS</span><br>I have a good knowledge in html and css</li>
+                                <li><span>DBMS</span><br>I have  a good experience with DBMS software </li>
+                                <li><span>Java script</span><br>I have a solid foundation in javascript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2022-current</span><br>I learned technical skills and softskills and I have done a mini project on IOT</li>
+                                <li><span>2021-2022</span><br>I did an internship on android development and java at NSIC</li>
+                                <li><span>2018-2021</span><br>Enhanced teamwork and communication skills through regular collaboration with cross-functional teams.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2024</span><br>BTECH from VJIT</li>
+                                <li><span>2021</span><br>Diploma from MIST</li>
+                                <li><span>2018</span><br>SSC from Panchavati Vidyalaya</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------sevice--------- -->
+<div id="services">
+    <div class="container">
+        <h4 class="sub-title">My services</h4>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML,CSS</h2>
+                <p>Html is a hypertext  is a markup language used to link next pages and css is use dto design that page </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DBMS</h2>
+                <p>Database management system is a management system use dto store and retrive the data use dto modify and alter the data,there are mainly 4 languages ddl,dml,dcl,dml  </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>Javascript</h2>
+                <p>javascript is a scripting language,used to  create backend applications </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h4 class="sub-title">My Work</h4>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work-1.png" alt="">
+            
+            <div class="layer">
+                <h3>social media app</h3>
+                <p>this app conects you to the talented people around the world
+                    Download it form palystore</p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>this app conects you to the talented people around the world
+                        Download it form palystore</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="./images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>this app conects you to the talented people around the world
+                        Download it form palystore</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!-- --------------contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-duotone fa-envelope"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>7997686689</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="" class=" btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @kevin made with easy tutorial</p>
+    </div>
+</div>
+
+    <script>
+
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+        sidemenu.style.right="0";
+        }
+        function closemenu(){
+        sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+
+</html>
